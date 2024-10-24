@@ -17,5 +17,4 @@ public class RunnableTask implements Runnable{
         message = service.getActualAdressAndPrice();
         connect.sendMessage(chatID, message);
     }
-
 }

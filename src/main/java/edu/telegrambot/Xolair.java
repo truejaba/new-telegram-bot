@@ -11,7 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Xolair {
 
-
     String drugForm;
     String adress;
     String price;
@@ -19,7 +18,6 @@ public class Xolair {
     public boolean isSolution(){
         return getDrugForm().equals("ксолар раствор 150мг/мл шприц 1мл №1");
     }
-
 
     @Override
     public String toString() {

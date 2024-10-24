@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 public class Connect extends TelegramLongPollingBot {
 
     private final TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
-    private final int delay = 3;
+    private final int delay = 5;
     private HashMap<Long, ScheduledExecutorService> services = new HashMap<>();
 
     @Value("${bot.name}")
@@ -74,7 +74,6 @@ public class Connect extends TelegramLongPollingBot {
         services.put(chat, service);
         service.scheduleWithFixedDelay(task, 1, delay, TimeUnit.SECONDS);
     }
-
 
     protected void sendMessage(Long chatId, String textToSend){
         SendMessage sendMessage = new SendMessage();

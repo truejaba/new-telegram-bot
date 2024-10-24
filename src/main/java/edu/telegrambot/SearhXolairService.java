@@ -13,7 +13,7 @@ import java.util.HashSet;
 @Component
 public class SearhXolairService {
 
-    public  HashSet<Xolair> allDrugs = new HashSet<>();
+    public HashSet<Xolair> allDrugs = new HashSet<>();
     private final String url = "https://www.acmespb.ru/preparaty/ksolar";
 
     public SearhXolairService() {}
